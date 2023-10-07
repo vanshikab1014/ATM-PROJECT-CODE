@@ -1,0 +1,48 @@
+print("                           ***************************************************")
+print("                                      WELCOMES YOU TO SBI ATM                 ")
+print("                           ***************************************************")
+print("1 Cash Withdrawl ",end="                                              ")
+print("2 Cash Deposit")
+print("3 Change PIN ",end="                                                  ")
+print("4 Check Balance")
+print("                                   5 Exit ")
+bal=70000
+pin=1234
+PIN=pin
+for i in range(1,30):
+    a=int(input("Please select your button "))
+    if a==1:
+        b=int(input("Enter Your PIN ****"))
+        c=int(input("Enter withdrawl amount "))
+        bal=bal-c
+        print("Withdrawl sucessfully")
+    elif a==2:
+        d=int(input("Enter Your A/c No: "))
+        e=654321
+        f=int(input("Renter Your A/c No: "))
+        if e==f:
+            g=int(input("Enter Your Deposit Amount ")) 
+            print("Deposit Successfully ")
+            bal=bal+g
+        else:
+            print("A/c no: does not match ")
+    elif a==3:
+        h=int(input("Enter Your Old PIN "))
+        if h==PIN:
+            j=int(input("Enter Your New PIN "))
+            k=int(input("Renter Your New PIN "))
+            PIN=k
+            print("PIN change successfully")
+        else:
+            print("Invalid old PIN ")
+    elif a==4:
+        l=int(input("Enter your PIN "))
+        if l==PIN:
+            print("Your Balance is ",bal)
+        else:
+            print("Invalid PIN")
+    elif a==5:
+        print("Thanks for Using SBI ATM ")
+        break
+    else:
+        print("Invalid Entry ")
